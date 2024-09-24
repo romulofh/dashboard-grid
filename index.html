@@ -8,10 +8,10 @@
 </head>
 <body>
   <nav class="mainNav">
-    <a href="index.html" class="mainNav-linkLogo">Dashboard</a>
+    <a href="index.html" class="mainNav_linkLogo">Dashboard</a>
 
-    <div class="menus">
-      <ul class="menu">
+    <div class="mainNav_menus">
+      <ul class="mainNav_menu">
         <li>
           <a href="#">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +91,7 @@
         </li>
       </ul>
 
-      <ul class="menu">
+      <ul class="mainNav_menu">
         <li>
           <a href="#">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,8 +146,10 @@
       <div class="perfil_thumb">
         <img src="./imagens/perfil.png" alt="Usuário">
       </div>
-      <div>Rômulo Furtado</div>
-      <div>Front-end</div>
+      <div>
+        <div class="perfil_name">Rômulo Furtado</div>
+        <div class="perfil_rule">Front-end</div>
+      </div>
     </section>
   </header>
 
@@ -158,10 +160,14 @@
         <span class="number">235600</span>
       </article>
 
+      <div class="separated"></div>
+
       <article>
         <span class="description">Prepared Today</span>
         <span class="number">16738</span>
       </article>
+
+      <div class="separated"></div>
 
       <article>
         <span class="description">Sorted Today</span>
@@ -174,10 +180,10 @@
     <figure>
       <img src="imagens/chart1.png" alt="">
     </figure>
-    <figure>
+    <figure class="grid-half">
       <img src="imagens/chart2.png" alt="">
     </figure>
-    <figure>
+    <figure class="grid-half">
       <img src="imagens/chart3.png" alt="">
     </figure>
   </main>
