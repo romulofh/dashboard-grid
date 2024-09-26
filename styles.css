@@ -13,8 +13,8 @@ body {
   font-family: 'Poppins', sans-serif;
 
   display: grid;
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 64px auto;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 64px minmax(calc(100vh - 64px), auto);
   margin: 0;
 }
 
@@ -31,6 +31,7 @@ img {
   max-height: 100vh;
   position: sticky;
   top: 0;
+  padding-right: var(--default-padding);
 }
 
 .topnav {
@@ -152,11 +153,11 @@ main > figure {
   border-radius: 4px;
 }
 
-.description {
+.summary_description {
   color: var(--color-text);
 }
 
-.number {
+.summary_number {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--primary-color);
